@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>多层边框</title>
+    <style>
+        div {
+            width: 15em;
+            height: 15em;
+            margin: 5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-shadow">
+        <p>
+            box-shadow不太为人所知的是，它还接受第四个参数（称作“扩张半径” ），通 过指定正值或负值，可以让投影面积加大或者减小。一个正值的扩张半径加 上两个为零的偏移量以及为零的模糊值，得到的“投影”其实就像一道实线边框.
+        </p>
+        <style>
+            .box-shadow {
+                background: yellowgreen;
+                box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0,0,0,.6);
+            }
+        </style>
+    </div>
+
+    <div class="outline">
+        <style>
+            .outline {
+                background: yellowgreen; 
+                border: 10px solid #655; 
+                outline: 5px solid deeppink;
+            }
+        </style>
+    </div>
+
+    <div class="outline-offset">
+        <style>
+            .outline-offset {
+                background: #6C5A57;
+                background: #6C5A57;
+                border: 10px solid #6C5A57;
+                outline: 1px dashed white;
+                outline-offset: -28px;
+            }
+        </style>
+    </div>
+
+    <div class="something-meaningful">
+        <div> 
+            I have a nice subtle inner rounding, 
+            don't I look pretty? 
+        </div>
+    <style>
+        .something-meaningful { 
+            margin: 0;
+            background: #655; 
+            padding: .8em; 
+        } 
+         
+        .something-meaningful > div { 
+            margin: 0;
+            background: tan; 
+            border-radius: .8em; 
+            padding: 1em; 
+        }
+    </style>
+    </div>
+
+    <div class="another">
+        <style>
+            .another {
+                background: tan; 
+                border-radius: .8em; 
+                padding: 1em; 
+                box-shadow: 0 0 0 .6em #655; 
+                outline: .6em solid #655;
+            }
+        </style>
+    </div>
+ 
+
+</body>
+</html>
