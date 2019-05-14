@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单侧投影</title>
+    <link rel="stylesheet" href="secret.css">
+    <style>
+        div {
+            background: #FDC110;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .shadow-top {
+            box-shadow: 0px -5px 4px -4px black;
+        }
+
+        .shadow-bottom {
+            box-shadow: 0 5px 4px -4px black
+        }
+        .shadow-left {
+            box-shadow: -5px 0px 4px -4px black;
+        }
+        .shadow-right {
+            box-shadow: 5px 0px 4px -4px black;
+        }
+        .shadow-right-bottom {
+            box-shadow: 3px 3px 6px -3px black;
+        }
+        .shadow-left-right {
+            box-shadow: -5px 0px 4px -4px black,
+            5px 0px 4px -4px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow-top">顶</div>
+    <div class="shadow-bottom">底</div>
+    <div class="shadow-left">左</div>
+    <div class="shadow-right">右</div>
+    <div class="shadow-right-bottom">右</div>
+    <div class="shadow-left-right">左右</div>
+</body>
+</html>
